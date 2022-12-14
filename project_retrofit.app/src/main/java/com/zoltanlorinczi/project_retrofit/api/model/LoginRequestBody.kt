@@ -7,9 +7,9 @@ import com.google.gson.annotations.SerializedName
  * Date:    11/8/2021
  */
 data class LoginRequestBody(
-    @SerializedName("adolfadolfbalint@gmail.com")
+    @SerializedName("username")
     var username: String,
 
-    @SerializedName("postman37")
+    @SerializedName("password")
     var password: String
 )
