@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.the_project.ui.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_activitiesScreenFragment"
+            app:destination="@id/activitiesScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myTaskScreenFragment"
+        android:name="com.example.the_project.ui.MyTaskScreenFragment"
+        android:label="fragment_my_task_screen"
+        tools:layout="@layout/fragment_my_task_screen" />
+    <fragment
+        android:id="@+id/activitiesScreenFragment"
+        android:name="com.example.the_project.ui.ActivitiesScreenFragment"
+        android:label="fragment_activities_screen"
+        tools:layout="@layout/fragment_activities_screen" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.the_project.ui.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_viewProfileFragment"
+            app:destination="@id/viewProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewProfileFragment"
+        android:name="com.example.the_project.ui.ViewProfileFragment"
+        android:label="fragment_view_profile"
+        tools:layout="@layout/fragment_view_profile" />
+    <fragment
+        android:id="@+id/userListFragment"
+        android:name="com.example.the_project.ui.UserListFragment"
+        android:label="fragment_user_list"
+        tools:layout="@layout/fragment_user_list" />
+</navigation>
