@@ -48,8 +48,9 @@ class MyTaskScreenFragment : Fragment() {
 
             taskTitle.setText(taskListInfo!![0].title)
             Log.i("xxx", taskListInfo.toString())
+            taskDescription.text = taskListInfo!![0].description
             //taskDescription.setText(taskListInfo!!.description)
-            //taskCreatedTime.setText(taskListInfo!!.created_time.toString())
+            taskCreatedTime.setText(taskListInfo!![0].created_time.toString())
         }
     }
 }
