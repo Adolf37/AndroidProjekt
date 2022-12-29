@@ -19,6 +19,7 @@ class MyTaskScreenFragment : Fragment() {
     lateinit var taskTitle: TextView
     lateinit var taskDescription: TextView
     lateinit var taskCreatedTime: TextView
+    lateinit var taskOwnerId: TextView
 
     private lateinit var taskListViewModel : TaskListViewModel
 
@@ -41,6 +42,7 @@ class MyTaskScreenFragment : Fragment() {
         taskTitle = view.findViewById(R.id.task_title)
         taskDescription = view.findViewById(R.id.task_description)
         taskCreatedTime = view.findViewById(R.id.task_created_time)
+        taskOwnerId = view.findViewById(R.id.task_owner_id)
 
         taskListViewModel.getTasks()
         taskListViewModel.taskList.observe(viewLifecycleOwner){
@@ -51,6 +53,7 @@ class MyTaskScreenFragment : Fragment() {
             taskDescription.text = taskListInfo!![0].description
             //taskDescription.setText(taskListInfo!!.description)
             taskCreatedTime.setText(taskListInfo!![0].created_time.toString())
+            taskOwnerId.setText(taskListInfo!![0].created_by_user_ID.toString())
         }
     }
 }

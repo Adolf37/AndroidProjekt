@@ -57,6 +57,7 @@ class ViewProfileFragment : Fragment() {
           //  userPhoneNumber.setText(profuser!!.phone_number)
             Log.i("xxx", profuser.toString())
             //userProfileImage.setImageURI()
+            userPhoneNumber.setText(profuser!!.phone_number.toString())
         }
     }
 }
