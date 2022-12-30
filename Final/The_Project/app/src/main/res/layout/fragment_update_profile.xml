@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.UpdateProfileFragment"
+    android:background="@color/black">
+
+
+    <EditText
+        android:id="@+id/updateprof_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="First Name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.422"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.189"
+        android:textColor="@color/white"
+        android:background="@drawable/backroundwithborder"
+        android:textSize="25dp"/>
+
+    <EditText
+        android:id="@+id/updateprof_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Email"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.422"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateprof_name"
+        app:layout_constraintVertical_bias="0.126"
+        android:textColor="@color/white"
+        android:background="@drawable/backroundwithborder"
+        android:textSize="25dp"/>
+
+    <EditText
+        android:id="@+id/updateprof_phonenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Phone Number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.422"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.466"
+        android:textColor="@color/white"
+        android:background="@drawable/backroundwithborder"
+        android:textSize="25dp"/>
+
+    <EditText
+        android:id="@+id/updateprof_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Location"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.422"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateprof_phonenumber"
+        app:layout_constraintVertical_bias="0.187"
+        android:textColor="@color/white"
+        android:background="@drawable/backroundwithborder"
+        android:textSize="25dp"/>
+
+    <Button
+        android:id="@+id/submitbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateprof_location" />
+
+    <!--    <com.google.android.material.button.MaterialButton-->
+<!--        style="?attr/materialButtonOutlinedStyle"-->
+<!--        android:layout_width="350dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/fragEditProfile_submitBtn"-->
+<!--        android:text="Submit"-->
+<!--        android:textColor="@color/white"-->
+<!--        app:cornerRadius="8dp"-->
+<!--        app:strokeColor="@color/purple_200"-->
+<!--        app:strokeWidth="2dp"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/updateprof_location"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"/>-->
+</androidx.constraintlayout.widget.ConstraintLayout>
