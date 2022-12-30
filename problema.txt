@@ -1,3 +1,0 @@
-Az egyetem regisztráltam magam a postman-el
-Letöltöttem  a kodot amit felraktál a githubra (https://github.com/lzoli02/android-project-example)
-S nem fut le a kód, elvégeztem a javaslatoka amiket az android studio adott de még így sem megy
